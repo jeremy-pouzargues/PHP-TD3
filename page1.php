@@ -12,10 +12,14 @@
 
 
     $rub2 = 'Page 2';
-    $rub2addr = 'page2.php';
+    $rub2adr = 'page2.php';
+
+    $form = 'Formulaire';
+    $formadr = 'formulaire.php';
 
 
-    echo '<a href="' . $rub2addr . '">' . $rub2 . '</a>';
+    echo '<a href="' . $rub2adr . '">' . $rub2 . '</a><br/>';
+    echo '<a href="' . $formadr . '">' . $form . '</a>';
 
     end_page();
 
