@@ -24,6 +24,8 @@ if ($action == 'Mailer')
     echo '<a href="http://jeremy-pouzargues.alwaysdata.net/PHP-TD2/formulaire.php"> 
                     Cliquez pour retourner à l\'accueil </a> ';
 
+    inscription($id, $civ, $mail, $mdp, $tel, $pays);
+
 }
 elseif ($action == 'Rec')
 {
@@ -41,7 +43,7 @@ else
     echo'<br/><strong>Bouton non géré!</strong><br/>';
 }
 
-inscription($id, $civ, $mail, $mdp, $tel, $pays);
+
 
 
 ?>
