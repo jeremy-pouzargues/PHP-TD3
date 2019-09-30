@@ -57,7 +57,7 @@ function inscription($id, $civ, $mail, $mdp, $tel, $pays)
                       \'' . $mdp . '\',
                       \'' . $tel . '\',
                       \'' . $pays . '\',
-                      \'' . NOW() . '\')';
+                            NOW())';
 
     if (!($dbResult = mysqli_query($dbLink, $query))) {
         echo 'Erreur de requête<br/>';
