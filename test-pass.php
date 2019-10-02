@@ -10,6 +10,7 @@ if (login($log,$pwd))
     $_SESSION['login'] = 'ok';
     $_SESSION['identifiant'] = $log;
     $_SESSION['mdp'] = $pwd;
+    connexion($log);
     header('Location: page1.php');
 }
 else
