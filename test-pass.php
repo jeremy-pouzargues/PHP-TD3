@@ -11,6 +11,8 @@ if (login($log,$pwd))
     $_SESSION['identifiant'] = $log;
     $_SESSION['mdp'] = $pwd;
     connexion($log);
+    if ($log == 'jeremy-pouzargues')
+        header('Location: admin.php');
     header('Location: page1.php');
 }
 else
