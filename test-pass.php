@@ -13,7 +13,8 @@ if (login($log,$pwd))
     connexion($log);
     if ($log == 'jeremy-pouzargues')
         header('Location: admin.php');
-    header('Location: page1.php');
+    else
+        header('Location: page1.php');
 }
 else
     header('Location: login.php?step=ERROR');
