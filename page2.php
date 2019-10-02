@@ -18,7 +18,7 @@
         exit();
     }
 
-    echo 'Liste des utilisateurs : <br/>';
+    echo '<br/>Liste des utilisateurs : <br/>';
     $cpt = 1;
     while($line = fgets($file, 255))
     {
